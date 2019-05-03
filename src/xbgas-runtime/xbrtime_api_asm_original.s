@@ -50,10 +50,10 @@
   .global __xbrtime_get_u1_seq
   .type __xbrtime_get_u1_seq, @function
 __xbrtime_get_u1_seq:
-  andi x0, x0, 0
-  add x31, zero, x0
+  eaddie e10, 0, a2
+  mv x31, zero
 .get_u1_seq:
-  andi x0, x0, 0
+  elbu x30, 0(a0)
   add a0, a0, a4
   add x31,x31,1
   sb x30, 0(a1)
@@ -67,22 +67,22 @@ __xbrtime_get_u1_seq:
   .global __xbrtime_get_u1_unr
   .type __xbrtime_get_u1_unr, @function
 __xbrtime_get_u1_unr:
-  andi x0, x0, 0
-  andi x0, x0, 0
-  andi x0, x0, 0
-  andi x0, x0, 0
+  eaddie e10, 0, a2 #pe source 0
+  eaddie e16, 0, a2 #pe source 1
+  eaddie e17, 0, a2 #pe source 2
+  eaddie e18, 0, a2 #pe source 3
   add x16, x10, a3  #source addr 1
   add x17, x16, a3  #source addr 2
   add x18, x17, a3  #source addr 3
   add x19, x11, a3  #dest addr 1
   add x20, x19, a3  #dest addr 2
   add x21, x20, a3  #dest addr 3
-  add x31, zero, x0
+  mv x31, zero
 .get_u1_unr:
-  andi x0, x0, 0
-  andi x0, x0, 0
-  andi x0, x0, 0
-  andi x0, x0, 0
+  elbu x22, 0(x10)  #load 0
+  elbu x23, 0(x16)  #load 1
+  elbu x24, 0(x17)  #load 2
+  elbu x25, 0(x18)  #load 3
   add x10, x18, a3  #incr 0
   add x16, x10, a3  #incr 1
   add x17, x16, a3  #incr 2
@@ -98,11 +98,11 @@ __xbrtime_get_u1_unr:
   add x21, x20, a3  #incr 3
   bne x31,a4,.get_u1_unr
 
-  beq a5, x0, .get_u1_unr_eject
+  beqz a5,.get_u1_unr_eject
 
-  add x31, zero, x0
+  mv x31, zero
 .get_u1_unr_epi:
-  andi x0, x0, 0
+  elbu x22, 0(x10)  #load 0
   add x31,x31,1     #incr loop trip
   add x10, x10, a3  #incr 0
   sb x22, 0(x11)    #store 0
@@ -117,10 +117,10 @@ __xbrtime_get_u1_unr:
   .global __xbrtime_get_u2_seq
   .type __xbrtime_get_u2_seq, @function
 __xbrtime_get_u2_seq:
-  andi x0, x0, 0
-  add x31, zero, x0
+  eaddie e10, 0, a2
+  mv x31, zero
 .get_u2_seq:
-  andi x0, x0, 0
+  elhu x30, 0(a0)
   add a0, a0, a4
   add x31,x31,1
   sh x30, 0(a1)
@@ -134,22 +134,22 @@ __xbrtime_get_u2_seq:
   .global __xbrtime_get_u2_unr
   .type __xbrtime_get_u2_unr, @function
 __xbrtime_get_u2_unr:
-  andi x0, x0, 0
-  andi x0, x0, 0
-  andi x0, x0, 0
-  andi x0, x0, 0
+  eaddie e10, 0, a2 #pe source 0
+  eaddie e16, 0, a2 #pe source 1
+  eaddie e17, 0, a2 #pe source 2
+  eaddie e18, 0, a2 #pe source 3
   add x16, x10, a3  #source addr 1
   add x17, x16, a3  #source addr 2
   add x18, x17, a3  #source addr 3
   add x19, x11, a3  #dest addr 1
   add x20, x19, a3  #dest addr 2
   add x21, x20, a3  #dest addr 3
-  add x31, zero, x0
+  mv x31, zero
 .get_u2_unr:
-  andi x0, x0, 0
-  andi x0, x0, 0
-  andi x0, x0, 0
-  andi x0, x0, 0
+  elhu x22, 0(x10)  #load 0
+  elhu x23, 0(x16)  #load 1
+  elhu x24, 0(x17)  #load 2
+  elhu x25, 0(x18)  #load 3
   add x10, x18, a3  #incr 0
   add x16, x10, a3  #incr 1
   add x17, x16, a3  #incr 2
@@ -165,11 +165,11 @@ __xbrtime_get_u2_unr:
   add x21, x20, a3  #incr 3
   bne x31,a4,.get_u2_unr
 
-  beq a5, x0, .get_u2_unr_eject
+  beqz a5,.get_u2_unr_eject
 
-  add x31, zero, x0
+  mv x31, zero
 .get_u2_unr_epi:
-  andi x0, x0, 0
+  elhu x22, 0(x10)  #load 0
   add x31,x31,1     #incr loop trip
   add x10, x10, a3  #incr 0
   sh x22, 0(x11)    #store 0
@@ -184,10 +184,10 @@ __xbrtime_get_u2_unr:
   .global __xbrtime_get_u4_seq
   .type __xbrtime_get_u4_seq, @function
 __xbrtime_get_u4_seq:
-  andi x0, x0, 0
-  add x31, zero, x0
+  eaddie e10, 0, a2
+  mv x31, zero
 .get_u4_seq:
-  andi x0, x0, 0
+  elw x30, 0(a0)
   add a0, a0, a4
   add x31,x31,1
   sw x30, 0(a1)
@@ -201,22 +201,22 @@ __xbrtime_get_u4_seq:
   .global __xbrtime_get_u4_unr
   .type __xbrtime_get_u4_unr, @function
 __xbrtime_get_u4_unr:
-  andi x0, x0, 0
-  andi x0, x0, 0
-  andi x0, x0, 0
-  andi x0, x0, 0
+  eaddie e10, 0, a2 #pe source 0
+  eaddie e16, 0, a2 #pe source 1
+  eaddie e17, 0, a2 #pe source 2
+  eaddie e18, 0, a2 #pe source 3
   add x16, x10, a3  #source addr 1
   add x17, x16, a3  #source addr 2
   add x18, x17, a3  #source addr 3
   add x19, x11, a3  #dest addr 1
   add x20, x19, a3  #dest addr 2
   add x21, x20, a3  #dest addr 3
-  add x31, zero, x0
+  mv x31, zero
 .get_u4_unr:
-  andi x0, x0, 0
-  andi x0, x0, 0
-  andi x0, x0, 0
-  andi x0, x0, 0
+  elw x22, 0(x10)  #load 0
+  elw x23, 0(x16)  #load 1
+  elw x24, 0(x17)  #load 2
+  elw x25, 0(x18)  #load 3
   add x10, x18, a3  #incr 0
   add x16, x10, a3  #incr 1
   add x17, x16, a3  #incr 2
@@ -232,11 +232,11 @@ __xbrtime_get_u4_unr:
   add x21, x20, a3  #incr 3
   bne x31,a4,.get_u4_unr
 
-  beq a5, x0, .get_u4_unr_eject
+  beqz a5,.get_u4_unr_eject
 
-  add x31, zero, x0
+  mv x31, zero
 .get_u4_unr_epi:
-  andi x0, x0, 0
+  elw x22, 0(x10)  #load 0
   add x31,x31,1     #incr loop trip
   add x10, x10, a3  #incr 0
   sw x22, 0(x11)    #store 0
@@ -251,13 +251,13 @@ __xbrtime_get_u4_unr:
   .global __xbrtime_get_u8_seq
   .type __xbrtime_get_u8_seq, @function
 __xbrtime_get_u8_seq:
-  andi x0, x0, 0
-  add x31, zero, x0
+  eaddie e10, 0, a2
+  mv x31, zero
 .get_u8_seq:
-  nop
+  eld x30, 0(a0)
   add a0, a0, a4
   add x31,x31,1
-  nop
+  sd x30, 0(a1)
   add a1, a1, a4
   bne x31,a3,.get_u8_seq
   ret
@@ -268,45 +268,45 @@ __xbrtime_get_u8_seq:
   .global __xbrtime_get_u8_unr
   .type __xbrtime_get_u8_unr, @function
 __xbrtime_get_u8_unr:
-  andi x0, x0, 0
-  andi x0, x0, 0
-  andi x0, x0, 0
-  andi x0, x0, 0
+  eaddie e10, 0, a2 #pe source 0
+  eaddie e16, 0, a2 #pe source 1
+  eaddie e17, 0, a2 #pe source 2
+  eaddie e18, 0, a2 #pe source 3
   add x16, x10, a3  #source addr 1
   add x17, x16, a3  #source addr 2
   add x18, x17, a3  #source addr 3
   add x19, x11, a3  #dest addr 1
   add x20, x19, a3  #dest addr 2
   add x21, x20, a3  #dest addr 3
-  add x31, zero, x0
+  mv x31, zero
 .get_u8_unr:
-  nop
-  nop
-  nop
-  nop
+  eld x22, 0(x10)  #load 0
+  eld x23, 0(x16)  #load 1
+  eld x24, 0(x17)  #load 2
+  eld x25, 0(x18)  #load 3
   add x10, x18, a3  #incr 0
   add x16, x10, a3  #incr 1
   add x17, x16, a3  #incr 2
   add x18, x17, a3  #incr 3
   add x31,x31,1     #incr loop trip
-  nop
+  sd x22, 0(x11)    #store 0
   add x11, x21, a3  #incr 0
-  nop
+  sd x23, 0(x19)    #store 1
   add x19, x11, a3  #incr 1
-  nop
+  sd x24, 0(x20)    #store 2
   add x20, x19, a3  #incr 2
-  nop
+  sd x25, 0(x21)    #store 3
   add x21, x20, a3  #incr 3
   bne x31,a4,.get_u8_unr
 
-  beq a5, x0, .get_u8_unr_eject
+  beqz a5,.get_u8_unr_eject
 
-  add x31, zero, x0
+  mv x31, zero
 .get_u8_unr_epi:
-  nop
+  eld x22, 0(x10)  #load 0
   add x31,x31,1     #incr loop trip
   add x10, x10, a3  #incr 0
-  nop
+  sd x22, 0(x11)    #store 0
   add x11, x11, a3  #incr 0
   bne x31,a5,.get_u8_unr_epi
 .get_u8_unr_eject:
@@ -318,10 +318,10 @@ __xbrtime_get_u8_unr:
   .global __xbrtime_get_s1_seq
   .type __xbrtime_get_s1_seq, @function
 __xbrtime_get_s1_seq:
-  andi x0, x0, 0
-  add x31, zero, x0
+  eaddie e10, 0, a2
+  mv x31, zero
 .get_s1_seq:
-  andi x0, x0, 0
+  elb x30, 0(a0)
   add a0, a0, a4
   add x31,x31,1
   sb x30, 0(a1)
@@ -335,22 +335,22 @@ __xbrtime_get_s1_seq:
   .global __xbrtime_get_s1_unr
   .type __xbrtime_get_s1_unr, @function
 __xbrtime_get_s1_unr:
-  andi x0, x0, 0
-  andi x0, x0, 0
-  andi x0, x0, 0
-  andi x0, x0, 0
+  eaddie e10, 0, a2 #pe source 0
+  eaddie e16, 0, a2 #pe source 1
+  eaddie e17, 0, a2 #pe source 2
+  eaddie e18, 0, a2 #pe source 3
   add x16, x10, a3  #source addr 1
   add x17, x16, a3  #source addr 2
   add x18, x17, a3  #source addr 3
   add x19, x11, a3  #dest addr 1
   add x20, x19, a3  #dest addr 2
   add x21, x20, a3  #dest addr 3
-  add x31, zero, x0
+  mv x31, zero
 .get_s1_unr:
-  andi x0, x0, 0
-  andi x0, x0, 0
-  andi x0, x0, 0
-  andi x0, x0, 0
+  elb x22, 0(x10)   #load 0
+  elb x23, 0(x16)   #load 1
+  elb x24, 0(x17)   #load 2
+  elb x25, 0(x18)   #load 3
   add x10, x18, a3  #incr 0
   add x16, x10, a3  #incr 1
   add x17, x16, a3  #incr 2
@@ -366,11 +366,11 @@ __xbrtime_get_s1_unr:
   add x21, x20, a3  #incr 3
   bne x31,a4,.get_s1_unr
 
-  beq a5, x0, .get_s1_unr_eject
+  beqz a5,.get_s1_unr_eject
 
-  add x31, zero, x0
+  mv x31, zero
 .get_s1_unr_epi:
-  andi x0, x0, 0
+  elb x22, 0(x10)   #load 0
   add x31,x31,1     #incr loop trip
   add x10, x10, a3  #incr 0
   sb x22, 0(x11)    #store 0
@@ -385,10 +385,10 @@ __xbrtime_get_s1_unr:
   .global __xbrtime_get_s2_seq
   .type __xbrtime_get_s2_seq, @function
 __xbrtime_get_s2_seq:
-  andi x0, x0, 0
-  add x31, zero, x0
+  eaddie e10, 0, a2
+  mv x31, zero
 .get_s2_seq:
-  andi x0, x0, 0
+  elh x30, 0(a0)
   add a0, a0, a4
   add x31,x31,1
   sh x30, 0(a1)
@@ -402,22 +402,22 @@ __xbrtime_get_s2_seq:
   .global __xbrtime_get_s2_unr
   .type __xbrtime_get_s2_unr, @function
 __xbrtime_get_s2_unr:
-  andi x0, x0, 0
-  andi x0, x0, 0
-  andi x0, x0, 0
-  andi x0, x0, 0
+  eaddie e10, 0, a2 #pe source 0
+  eaddie e16, 0, a2 #pe source 1
+  eaddie e17, 0, a2 #pe source 2
+  eaddie e18, 0, a2 #pe source 3
   add x16, x10, a3  #source addr 1
   add x17, x16, a3  #source addr 2
   add x18, x17, a3  #source addr 3
   add x19, x11, a3  #dest addr 1
   add x20, x19, a3  #dest addr 2
   add x21, x20, a3  #dest addr 3
-  add x31, zero, x0
+  mv x31, zero
 .get_s2_unr:
-  andi x0, x0, 0
-  andi x0, x0, 0
-  andi x0, x0, 0
-  andi x0, x0, 0
+  elh x22, 0(x10)   #load 0
+  elh x23, 0(x16)   #load 1
+  elh x24, 0(x17)   #load 2
+  elh x25, 0(x18)   #load 3
   add x10, x18, a3  #incr 0
   add x16, x10, a3  #incr 1
   add x17, x16, a3  #incr 2
@@ -433,11 +433,11 @@ __xbrtime_get_s2_unr:
   add x21, x20, a3  #incr 3
   bne x31,a4,.get_s2_unr
 
-  beq a5, x0, .get_s2_unr_eject
+  beqz a5,.get_s2_unr_eject
 
-  add x31, zero, x0
+  mv x31, zero
 .get_s2_unr_epi:
-  andi x0, x0, 0
+  elh x22, 0(x10)   #load 0
   add x31,x31,1     #incr loop trip
   add x10, x10, a3  #incr 0
   sh x22, 0(x11)    #store 0
@@ -452,10 +452,10 @@ __xbrtime_get_s2_unr:
   .global __xbrtime_get_s4_seq
   .type __xbrtime_get_s4_seq, @function
 __xbrtime_get_s4_seq:
-  andi x0, x0, 0
-  add x31, zero, x0
+  eaddie e10, 0, a2
+  mv x31, zero
 .get_s4_seq:
-  andi x0, x0, 0
+  elw x30, 0(a0)
   add a0, a0, a4
   add x31,x31,1
   sw x30, 0(a1)
@@ -469,22 +469,22 @@ __xbrtime_get_s4_seq:
   .global __xbrtime_get_s4_unr
   .type __xbrtime_get_s4_unr, @function
 __xbrtime_get_s4_unr:
-  andi x0, x0, 0
-  andi x0, x0, 0
-  andi x0, x0, 0
-  andi x0, x0, 0
+  eaddie e10, 0, a2 #pe source 0
+  eaddie e16, 0, a2 #pe source 1
+  eaddie e17, 0, a2 #pe source 2
+  eaddie e18, 0, a2 #pe source 3
   add x16, x10, a3  #source addr 1
   add x17, x16, a3  #source addr 2
   add x18, x17, a3  #source addr 3
   add x19, x11, a3  #dest addr 1
   add x20, x19, a3  #dest addr 2
   add x21, x20, a3  #dest addr 3
-  add x31, zero, x0
+  mv x31, zero
 .get_s4_unr:
-  andi x0, x0, 0
-  andi x0, x0, 0
-  andi x0, x0, 0
-  andi x0, x0, 0
+  elw x22, 0(x10)   #load 0
+  elw x23, 0(x16)   #load 1
+  elw x24, 0(x17)   #load 2
+  elw x25, 0(x18)   #load 3
   add x10, x18, a3  #incr 0
   add x16, x10, a3  #incr 1
   add x17, x16, a3  #incr 2
@@ -500,11 +500,11 @@ __xbrtime_get_s4_unr:
   add x21, x20, a3  #incr 3
   bne x31,a4,.get_s4_unr
 
-  beq a5, x0, .get_s4_unr_eject
+  beqz a5,.get_s4_unr_eject
 
-  add x31, zero, x0
+  mv x31, zero
 .get_s4_unr_epi:
-  andi x0, x0, 0
+  elw x22, 0(x10)   #load 0
   add x31,x31,1     #incr loop trip
   add x10, x10, a3  #incr 0
   sw x22, 0(x11)    #store 0
@@ -519,13 +519,13 @@ __xbrtime_get_s4_unr:
   .global __xbrtime_get_s8_seq
   .type __xbrtime_get_s8_seq, @function
 __xbrtime_get_s8_seq:
-  andi x0, x0, 0
-  add x31, zero, x0
+  eaddie e10, 0, a2
+  mv x31, zero
 .get_s8_seq:
-  nop
+  eld x30, 0(a0)
   add a0, a0, a4
   add x31,x31,1
-  nop
+  sd x30, 0(a1)
   add a1, a1, a4
   bne x31,a3,.get_s8_seq
   ret
@@ -536,45 +536,45 @@ __xbrtime_get_s8_seq:
   .global __xbrtime_get_s8_unr
   .type __xbrtime_get_s8_unr, @function
 __xbrtime_get_s8_unr:
-  andi x0, x0, 0
-  andi x0, x0, 0
-  andi x0, x0, 0
-  andi x0, x0, 0
+  eaddie e10, 0, a2 #pe source 0
+  eaddie e16, 0, a2 #pe source 1
+  eaddie e17, 0, a2 #pe source 2
+  eaddie e18, 0, a2 #pe source 3
   add x16, x10, a3  #source addr 1
   add x17, x16, a3  #source addr 2
   add x18, x17, a3  #source addr 3
   add x19, x11, a3  #dest addr 1
   add x20, x19, a3  #dest addr 2
   add x21, x20, a3  #dest addr 3
-  add x31, zero, x0
+  mv x31, zero
 .get_s8_unr:
-  nop
-  nop
-  nop
-  nop
+  eld x22, 0(x10)   #load 0
+  eld x23, 0(x16)   #load 1
+  eld x24, 0(x17)   #load 2
+  eld x25, 0(x18)   #load 3
   add x10, x18, a3  #incr 0
   add x16, x10, a3  #incr 1
   add x17, x16, a3  #incr 2
   add x18, x17, a3  #incr 3
   add x31,x31,1     #incr loop trip
-  nop
+  sd x22, 0(x11)    #store 0
   add x11, x21, a3  #incr 0
-  nop
+  sd x23, 0(x19)    #store 1
   add x19, x11, a3  #incr 1
-  nop
+  sd x24, 0(x20)    #store 2
   add x20, x19, a3  #incr 2
-  nop
+  sd x25, 0(x21)    #store 3
   add x21, x20, a3  #incr 3
   bne x31,a4,.get_s8_unr
 
-  beq a5, x0, .get_s8_unr_eject
+  beqz a5,.get_s8_unr_eject
 
-  add x31, zero, x0
+  mv x31, zero
 .get_s8_unr_epi:
-  nop
+  eld x22, 0(x10)   #load 0
   add x31,x31,1     #incr loop trip
   add x10, x10, a3  #incr 0
-  nop
+  sd x22, 0(x11)    #store 0
   add x11, x11, a3  #incr 0
   bne x31,a5,.get_s1_unr_epi
 .get_s8_unr_eject:
@@ -586,13 +586,13 @@ __xbrtime_get_s8_unr:
   .global __xbrtime_put_u1_seq
   .type __xbrtime_put_u1_seq, @function
 __xbrtime_put_u1_seq:
-  andi x0, x0, 0
-  add x31, zero, x0
+  eaddie e11, 0, a2
+  mv x31, zero
 .put_u1_seq:
   lbu x30, 0(a0)
   add a0, a0, a4
   add x31,x31,1
-  andi x0, x0, 0
+  esb x30, 0(a1)
   add a1,a1,a4
   bne x31,a3,.put_u1_seq
   ret
@@ -603,17 +603,17 @@ __xbrtime_put_u1_seq:
   .global __xbrtime_put_u1_unr
   .type __xbrtime_put_u1_unr, @function
 __xbrtime_put_u1_unr:
-  andi x0, x0, 0
-  andi x0, x0, 0
-  andi x0, x0, 0
-  andi x0, x0, 0
+  eaddie e11, 0, a2   #pe dest 0
+  eaddie e19, 0, a2   #pe dest 1
+  eaddie e20, 0, a2   #pe dest 2
+  eaddie e21, 0, a2   #pe dest 3
   add x16, x10, a3    #source addr 1
   add x17, x16, a3    #source addr 2
   add x18, x17, a3    #source addr 3
   add x19, x11, a3    #dest addr 1
   add x20, x19, a3    #dest addr 2
   add x21, x20, a3    #dest addr3
-  add x31, zero, x0
+  mv x31, zero
 .put_u1_unr:
   lbu x22, 0(x10)     #load 0
   lbu x23, 0(x16)     #load 1
@@ -624,24 +624,24 @@ __xbrtime_put_u1_unr:
   add x17, x16, a3    #incr 2
   add x18, x17, a3    #incr 3
   add x31, x31, 1     #incr loop trip
-  andi x0, x0, 0
+  esb x22, 0(x11)     #store 0
   add x11, x21, a3    #incr 0
-  andi x0, x0, 0
+  esb x23, 0(x19)     #store 1
   add x19, x11, a3    #incr 1
-  andi x0, x0, 0
+  esb x24, 0(x20)     #store 2
   add x20, x19, a3    #incr 2
-  andi x0, x0, 0
+  esb x25, 0(x21)     #store 3
   add x21, x20, a3    #incr 3
   bne x31,a4,.put_u1_unr
 
-  beq a5, x0, .put_u1_unr_eject
+  beqz a5,.put_u1_unr_eject
 
-  add x31, zero, x0
+  mv x31, zero
 .put_u1_unr_epi:
   lbu x22, 0(x10)     #load 0
   add x31, x31, 1     #incr loop trip
   add x10, x10, a3    #incr 0
-  andi x0, x0, 0
+  esb x22, 0(x11)     #store 0
   add x11, x11, a3    #incr 0
   bne x31,a5,.put_u1_unr_epi
 .put_u1_unr_eject:
@@ -653,13 +653,13 @@ __xbrtime_put_u1_unr:
   .global __xbrtime_put_u2_seq
   .type __xbrtime_put_u2_seq, @function
 __xbrtime_put_u2_seq:
-  andi x0, x0, 0
-  add x31, zero, x0
+  eaddie e11, 0, a2
+  mv x31, zero
 .put_u2_seq:
   lhu x30, 0(a0)
   add a0, a0, a4
   add x31,x31,1
-  andi x0, x0, 0
+  esh x30, 0(a1)
   add a1,a1,a4
   bne x31,a3,.put_u2_seq
   ret
@@ -670,17 +670,17 @@ __xbrtime_put_u2_seq:
   .global __xbrtime_put_u2_unr
   .type __xbrtime_put_u2_unr, @function
 __xbrtime_put_u2_unr:
-  andi x0, x0, 0
-  andi x0, x0, 0
-  andi x0, x0, 0
-  andi x0, x0, 0
+  eaddie e11, 0, a2   #pe dest 0
+  eaddie e19, 0, a2   #pe dest 1
+  eaddie e20, 0, a2   #pe dest 2
+  eaddie e21, 0, a2   #pe dest 3
   add x16, x10, a3    #source addr 1
   add x17, x16, a3    #source addr 2
   add x18, x17, a3    #source addr 3
   add x19, x11, a3    #dest addr 1
   add x20, x19, a3    #dest addr 2
   add x21, x20, a3    #dest addr3
-  add x31, zero, x0
+  mv x31, zero
 .put_u2_unr:
   lhu x22, 0(x10)     #load 0
   lhu x23, 0(x16)     #load 1
@@ -691,24 +691,24 @@ __xbrtime_put_u2_unr:
   add x17, x16, a3    #incr 2
   add x18, x17, a3    #incr 3
   add x31, x31, 1     #incr loop trip
-  andi x0, x0, 0
+  esh x22, 0(x11)     #store 0
   add x11, x21, a3    #incr 0
-  andi x0, x0, 0
+  esh x23, 0(x19)     #store 1
   add x19, x11, a3    #incr 1
-  andi x0, x0, 0
+  esh x24, 0(x20)     #store 2
   add x20, x19, a3    #incr 2
-  andi x0, x0, 0
+  esh x25, 0(x21)     #store 3
   add x21, x20, a3    #incr 3
   bne x31,a4,.put_u2_unr
 
-  beq a5, x0, .put_u2_unr_eject
+  beqz a5,.put_u2_unr_eject
 
-  add x31, zero, x0
+  mv x31, zero
 .put_u2_unr_epi:
   lhu x22, 0(x10)     #load 0
   add x31, x31, 1     #incr loop trip
   add x10, x10, a3    #incr 0
-  andi x0, x0, 0
+  esh x22, 0(x11)     #store 0
   add x11, x11, a3    #incr 0
   bne x31,a5,.put_u2_unr_epi
 .put_u2_unr_eject:
@@ -720,13 +720,13 @@ __xbrtime_put_u2_unr:
   .global __xbrtime_put_u4_seq
   .type __xbrtime_put_u4_seq, @function
 __xbrtime_put_u4_seq:
-  andi x0, x0, 0
-  add x31, zero, x0
+  eaddie e11, 0, a2
+  mv x31, zero
 .put_u4_seq:
-  lw x30, 0(a0)
+  lwu x30, 0(a0)
   add a0, a0, a4
   add x31,x31,1
-  andi x0, x0, 0
+  esw x30, 0(a1)
   add a1,a1,a4
   bne x31,a3,.put_u4_seq
   ret
@@ -737,45 +737,45 @@ __xbrtime_put_u4_seq:
   .global __xbrtime_put_u4_unr
   .type __xbrtime_put_u4_unr, @function
 __xbrtime_put_u4_unr:
-  andi x0, x0, 0
-  andi x0, x0, 0
-  andi x0, x0, 0
-  andi x0, x0, 0
+  eaddie e11, 0, a2   #pe dest 0
+  eaddie e19, 0, a2   #pe dest 1
+  eaddie e20, 0, a2   #pe dest 2
+  eaddie e21, 0, a2   #pe dest 3
   add x16, x10, a3    #source addr 1
   add x17, x16, a3    #source addr 2
   add x18, x17, a3    #source addr 3
   add x19, x11, a3    #dest addr 1
   add x20, x19, a3    #dest addr 2
   add x21, x20, a3    #dest addr3
-  add x31, zero, x0
+  mv x31, zero
 .put_u4_unr:
-  lw x22, 0(x10)
-  lw x23, 0(x16)
-  lw x24, 0(x17)
-  lw x25, 0(x18)
+  lwu x22, 0(x10)     #load 0
+  lwu x23, 0(x16)     #load 1
+  lwu x24, 0(x17)     #load 2
+  lwu x25, 0(x18)     #load 3
   add x10, x18, a3    #incr 0
   add x16, x10, a3    #incr 1
   add x17, x16, a3    #incr 2
   add x18, x17, a3    #incr 3
   add x31, x31, 1     #incr loop trip
-  andi x0, x0, 0
+  esw x22, 0(x11)     #store 0
   add x11, x21, a3    #incr 0
-  andi x0, x0, 0
+  esw x23, 0(x19)     #store 1
   add x19, x11, a3    #incr 1
-  andi x0, x0, 0
+  esw x24, 0(x20)     #store 2
   add x20, x19, a3    #incr 2
-  andi x0, x0, 0
+  esw x25, 0(x21)     #store 3
   add x21, x20, a3    #incr 3
   bne x31,a4,.put_u4_unr
 
-  beq a5, x0, .put_u4_unr_eject
+  beqz a5,.put_u4_unr_eject
 
-  add x31, zero, x0
+  mv x31, zero
 .put_u4_unr_epi:
-  lw x22, 0(x10)
+  lwu x22, 0(x10)     #load 0
   add x31, x31, 1     #incr loop trip
   add x10, x10, a3    #incr 0
-  andi x0, x0, 0
+  esw x22, 0(x11)     #store 0
   add x11, x11, a3    #incr 0
   bne x31,a5,.put_u4_unr_epi
 .put_u4_unr_eject:
@@ -787,13 +787,13 @@ __xbrtime_put_u4_unr:
   .global __xbrtime_put_u8_seq
   .type __xbrtime_put_u8_seq, @function
 __xbrtime_put_u8_seq:
-  andi x0, x0, 0
-  add x31, zero, x0
+  eaddie e11, 0, a2
+  mv x31, zero
 .put_u8_seq:
-  nop
+  ld x30, 0(a0)
   add a0, a0, a4
   add x31,x31,1
-  nop
+  esd x30, 0(a1)
   add a1,a1,a4
   bne x31,a3,.put_u8_seq
   ret
@@ -804,45 +804,45 @@ __xbrtime_put_u8_seq:
   .global __xbrtime_put_u8_unr
   .type __xbrtime_put_u8_unr, @function
 __xbrtime_put_u8_unr:
-  andi x0, x0, 0
-  andi x0, x0, 0
-  andi x0, x0, 0
-  andi x0, x0, 0
+  eaddie e11, 0, a2   #pe dest 0
+  eaddie e19, 0, a2   #pe dest 1
+  eaddie e20, 0, a2   #pe dest 2
+  eaddie e21, 0, a2   #pe dest 3
   add x16, x10, a3    #source addr 1
   add x17, x16, a3    #source addr 2
   add x18, x17, a3    #source addr 3
   add x19, x11, a3    #dest addr 1
   add x20, x19, a3    #dest addr 2
   add x21, x20, a3    #dest addr3
-  add x31, zero, x0
+  mv x31, zero
 .put_u8_unr:
-  nop
-  nop
-  nop
-  nop
+  ld x22, 0(x10)      #load 0
+  ld x23, 0(x16)      #load 1
+  ld x24, 0(x17)      #load 2
+  ld x25, 0(x18)      #load 3
   add x10, x18, a3    #incr 0
   add x16, x10, a3    #incr 1
   add x17, x16, a3    #incr 2
   add x18, x17, a3    #incr 3
   add x31, x31, 1     #incr loop trip
-  nop
+  esd x22, 0(x11)     #store 0
   add x11, x21, a3    #incr 0
-  nop
+  esd x23, 0(x19)     #store 1
   add x19, x11, a3    #incr 1
-  nop
+  esd x24, 0(x20)     #store 2
   add x20, x19, a3    #incr 2
-  nop
+  esd x25, 0(x21)     #store 3
   add x21, x20, a3    #incr 3
   bne x31,a4,.put_u8_unr
 
-  beq a5, x0, .put_u8_unr_eject
+  beqz a5,.put_u8_unr_eject
 
-  add x31, zero, x0
+  mv x31, zero
 .put_u8_unr_epi:
-  nop
+  ld x22, 0(x10)      #load 0
   add x31, x31, 1     #incr loop trip
   add x10, x10, a3    #incr 0
-  nop
+  esd x22, 0(x11)     #store 0
   add x11, x11, a3    #incr 0
   bne x31,a5,.put_u8_unr_epi
 .put_u8_unr_eject:
@@ -854,13 +854,13 @@ __xbrtime_put_u8_unr:
   .global __xbrtime_put_s1_seq
   .type __xbrtime_put_s1_seq, @function
 __xbrtime_put_s1_seq:
-  andi x0, x0, 0
-  add x31, zero, x0
+  eaddie e11, 0, a2
+  mv x31, zero
 .put_s1_seq:
   lb x30, 0(a0)
   add a0, a0, a4
   add x31,x31,1
-  andi x0, x0, 0
+  esb x30, 0(a1)
   add a1,a1,a4
   bne x31,a3,.put_s1_seq
   ret
@@ -871,17 +871,17 @@ __xbrtime_put_s1_seq:
   .global __xbrtime_put_s1_unr
   .type __xbrtime_put_s1_unr, @function
 __xbrtime_put_s1_unr:
-  andi x0, x0, 0
-  andi x0, x0, 0
-  andi x0, x0, 0
-  andi x0, x0, 0
+  eaddie e11, 0, a2   #pe dest 0
+  eaddie e19, 0, a2   #pe dest 1
+  eaddie e20, 0, a2   #pe dest 2
+  eaddie e21, 0, a2   #pe dest 3
   add x16, x10, a3    #source addr 1
   add x17, x16, a3    #source addr 2
   add x18, x17, a3    #source addr 3
   add x19, x11, a3    #dest addr 1
   add x20, x19, a3    #dest addr 2
   add x21, x20, a3    #dest addr3
-  add x31, zero, x0
+  mv x31, zero
 .put_s1_unr:
   lb x22, 0(x10)      #load 0
   lb x23, 0(x16)      #load 1
@@ -892,24 +892,24 @@ __xbrtime_put_s1_unr:
   add x17, x16, a3    #incr 2
   add x18, x17, a3    #incr 3
   add x31, x31, 1     #incr loop trip
-  andi x0, x0, 0
+  esb x22, 0(x11)     #store 0
   add x11, x21, a3    #incr 0
-  andi x0, x0, 0
+  esb x23, 0(x19)     #store 1
   add x19, x11, a3    #incr 1
-  andi x0, x0, 0
+  esb x24, 0(x20)     #store 2
   add x20, x19, a3    #incr 2
-  andi x0, x0, 0
+  esb x25, 0(x21)     #store 3
   add x21, x20, a3    #incr 3
   bne x31,a4,.put_s1_unr
 
-  beq a5, x0, .put_s1_unr_eject
+  beqz a5,.put_s1_unr_eject
 
-  add x31, zero, x0
+  mv x31, zero
 .put_s1_unr_epi:
   lb x22, 0(x10)      #load 0
   add x31, x31, 1     #incr loop trip
   add x10, x10, a3    #incr 0
-  andi x0, x0, 0
+  esb x22, 0(x11)     #store 0
   add x11, x11, a3    #incr 0
   bne x31,a5,.put_s1_unr_epi
 .put_s1_unr_eject:
@@ -921,13 +921,13 @@ __xbrtime_put_s1_unr:
   .global __xbrtime_put_s2_seq
   .type __xbrtime_put_s2_seq, @function
 __xbrtime_put_s2_seq:
-  andi x0, x0, 0
-  add x31, zero, x0
+  eaddie e11, 0, a2
+  mv x31, zero
 .put_s2_seq:
   lh x30, 0(a0)
   add a0, a0, a4
   add x31,x31,1
-  andi x0, x0, 0
+  esh x30, 0(a1)
   add a1,a1,a4
   bne x31,a3,.put_s2_seq
   ret
@@ -938,17 +938,17 @@ __xbrtime_put_s2_seq:
   .global __xbrtime_put_s2_unr
   .type __xbrtime_put_s2_unr, @function
 __xbrtime_put_s2_unr:
-  andi x0, x0, 0
-  andi x0, x0, 0
-  andi x0, x0, 0
-  andi x0, x0, 0
+  eaddie e11, 0, a2   #pe dest 0
+  eaddie e19, 0, a2   #pe dest 1
+  eaddie e20, 0, a2   #pe dest 2
+  eaddie e21, 0, a2   #pe dest 3
   add x16, x10, a3    #source addr 1
   add x17, x16, a3    #source addr 2
   add x18, x17, a3    #source addr 3
   add x19, x11, a3    #dest addr 1
   add x20, x19, a3    #dest addr 2
   add x21, x20, a3    #dest addr3
-  add x31, zero, x0
+  mv x31, zero
 .put_s2_unr:
   lh x22, 0(x10)      #load 0
   lh x23, 0(x16)      #load 1
@@ -959,24 +959,24 @@ __xbrtime_put_s2_unr:
   add x17, x16, a3    #incr 2
   add x18, x17, a3    #incr 3
   add x31, x31, 1     #incr loop trip
-  andi x0, x0, 0
+  esh x22, 0(x11)     #store 0
   add x11, x21, a3    #incr 0
-  andi x0, x0, 0
+  esh x23, 0(x19)     #store 1
   add x19, x11, a3    #incr 1
-  andi x0, x0, 0
+  esh x24, 0(x20)     #store 2
   add x20, x19, a3    #incr 2
-  andi x0, x0, 0
+  esh x25, 0(x21)     #store 3
   add x21, x20, a3    #incr 3
   bne x31,a4,.put_s2_unr
 
-  beq a5, x0, .put_s2_unr_eject
+  beqz a5,.put_s2_unr_eject
 
-  add x31, zero, x0
+  mv x31, zero
 .put_s2_unr_epi:
   lh x22, 0(x10)      #load 0
   add x31, x31, 1     #incr loop trip
   add x10, x10, a3    #incr 0
-  andi x0, x0, 0
+  esh x22, 0(x11)     #store 0
   add x11, x11, a3    #incr 0
   bne x31,a5,.put_s2_unr_epi
 .put_s2_unr_eject:
@@ -988,13 +988,13 @@ __xbrtime_put_s2_unr:
   .global __xbrtime_put_s4_seq
   .type __xbrtime_put_s4_seq, @function
 __xbrtime_put_s4_seq:
-  andi x0, x0, 0
-  add x31, zero, x0
+  eaddie e11, 0, a2
+  mv x31, zero
 .put_s4_seq:
   lw x30, 0(a0)
   add a0, a0, a4
   add x31,x31,1
-  andi x0, x0, 0
+  esw x30, 0(a1)
   add a1,a1,a4
   bne x31,a3,.put_s4_seq
   ret
@@ -1005,17 +1005,17 @@ __xbrtime_put_s4_seq:
   .global __xbrtime_put_s4_unr
   .type __xbrtime_put_s4_unr, @function
 __xbrtime_put_s4_unr:
-  andi x0, x0, 0
-  andi x0, x0, 0
-  andi x0, x0, 0
-  andi x0, x0, 0
+  eaddie e11, 0, a2   #pe dest 0
+  eaddie e19, 0, a2   #pe dest 1
+  eaddie e20, 0, a2   #pe dest 2
+  eaddie e21, 0, a2   #pe dest 3
   add x16, x10, a3    #source addr 1
   add x17, x16, a3    #source addr 2
   add x18, x17, a3    #source addr 3
   add x19, x11, a3    #dest addr 1
   add x20, x19, a3    #dest addr 2
   add x21, x20, a3    #dest addr3
-  add x31, zero, x0
+  mv x31, zero
 .put_s4_unr:
   lw x22, 0(x10)      #load 0
   lw x23, 0(x16)      #load 1
@@ -1026,24 +1026,24 @@ __xbrtime_put_s4_unr:
   add x17, x16, a3    #incr 2
   add x18, x17, a3    #incr 3
   add x31, x31, 1     #incr loop trip
-  andi x0, x0, 0
+  esw x22, 0(x11)     #store 0
   add x11, x21, a3    #incr 0
-  andi x0, x0, 0
+  esw x23, 0(x19)     #store 1
   add x19, x11, a3    #incr 1
-  andi x0, x0, 0
+  esw x24, 0(x20)     #store 2
   add x20, x19, a3    #incr 2
-  andi x0, x0, 0
+  esw x25, 0(x21)     #store 3
   add x21, x20, a3    #incr 3
   bne x31,a4,.put_s4_unr
 
-  beq a5, x0, .put_s4_unr_eject
+  beqz a5,.put_s4_unr_eject
 
-  add x31, zero, x0
+  mv x31, zero
 .put_s4_unr_epi:
   lw x22, 0(x10)      #load 0
   add x31, x31, 1     #incr loop trip
   add x10, x10, a3    #incr 0
-  andi x0, x0, 0
+  esw x22, 0(x11)     #store 0
   add x11, x11, a3    #incr 0
   bne x31,a5,.put_s4_unr_epi
 .put_s4_unr_eject:
@@ -1055,13 +1055,13 @@ __xbrtime_put_s4_unr:
   .global __xbrtime_put_s8_seq
   .type __xbrtime_put_s8_seq, @function
 __xbrtime_put_s8_seq:
-  andi x0, x0, 0
-  add x31, zero, x0
+  eaddie e11, 0, a2
+  mv x31, zero
 .put_s8_seq:
-  nop
+  ld x30, 0(a0)
   add a0, a0, a4
   add x31,x31,1
-  nop
+  esd x30, 0(a1)
   add a1,a1,a4
   bne x31,a3,.put_s8_seq
   ret
@@ -1072,45 +1072,45 @@ __xbrtime_put_s8_seq:
   .global __xbrtime_put_s8_unr
   .type __xbrtime_put_s8_unr, @function
 __xbrtime_put_s8_unr:
-  andi x0, x0, 0
-  andi x0, x0, 0
-  andi x0, x0, 0
-  andi x0, x0, 0
+  eaddie e11, 0, a2   #pe dest 0
+  eaddie e19, 0, a2   #pe dest 1
+  eaddie e20, 0, a2   #pe dest 2
+  eaddie e21, 0, a2   #pe dest 3
   add x16, x10, a3    #source addr 1
   add x17, x16, a3    #source addr 2
   add x18, x17, a3    #source addr 3
   add x19, x11, a3    #dest addr 1
   add x20, x19, a3    #dest addr 2
   add x21, x20, a3    #dest addr3
-  add x31, zero, x0
+  mv x31, zero
 .put_s8_unr:
-  nop
-  nop
-  nop
-  nop
+  ld x22, 0(x10)      #load 0
+  ld x23, 0(x16)      #load 1
+  ld x24, 0(x17)      #load 2
+  ld x25, 0(x18)      #load 3
   add x10, x18, a3    #incr 0
   add x16, x10, a3    #incr 1
   add x17, x16, a3    #incr 2
   add x18, x17, a3    #incr 3
   add x31, x31, 1     #incr loop trip
-  nop
+  esd x22, 0(x11)     #store 0
   add x11, x21, a3    #incr 0
-  nop
+  esd x23, 0(x19)     #store 1
   add x19, x11, a3    #incr 1
-  nop
+  esd x24, 0(x20)     #store 2
   add x20, x19, a3    #incr 2
-  nop
+  esd x25, 0(x21)     #store 3
   add x21, x20, a3    #incr 3
   bne x31,a4,.put_s8_unr
 
-  beq a5, x0, .put_s8_unr_eject
+  beqz a5,.put_s8_unr_eject
 
-  add x31, zero, x0
+  mv x31, zero
 .put_s8_unr_epi:
-  nop
+  ld x22, 0(x10)      #load 0
   add x31, x31, 1     #incr loop trip
   add x10, x10, a3    #incr 0
-  nop
+  esd x22, 0(x11)     #store 0
   add x11, x11, a3    #incr 0
   bne x31,a5,.put_s8_unr_epi
 .put_s8_unr_eject:

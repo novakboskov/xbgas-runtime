@@ -1,0 +1,88 @@
+# is not an instruction ALPHA CRITERION
+# is not an instruction ALPHA CRITERION
+# is not an instruction ALPHA CRITERION
+# is not an instruction ALPHA CRITERION
+# is not an instruction ALPHA CRITERION
+# is not an instruction ALPHA CRITERION
+# is not an instruction ALPHA CRITERION
+# is not an instruction ALPHA CRITERION
+# is not an instruction ALPHA CRITERION
+# is not an instruction ALPHA CRITERION
+# is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+# is not an instruction ALPHA CRITERION
+# is not an instruction ALPHA CRITERION
+# is not an instruction ALPHA CRITERION
+# is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+.file is not an instruction ALPHA CRITERION
+.text is not an instruction ALPHA CRITERION
+.align is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+.global is not an instruction ALPHA CRITERION
+.type is not an instruction ALPHA CRITERION
+__xbrtime_asm_get_id: is not an instruction ALPHA CRITERION
+  eaddi a0,0,e10
+ is NOT in RVI
+.size is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+.global is not an instruction ALPHA CRITERION
+.type is not an instruction ALPHA CRITERION
+__xbrtime_asm_get_npes: is not an instruction ALPHA CRITERION
+  eaddi a0,0,e11
+ is NOT in RVI
+.size is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+.global is not an instruction ALPHA CRITERION
+.type is not an instruction ALPHA CRITERION
+__xbrtime_asm_get_memsize: is not an instruction ALPHA CRITERION
+  eaddi a0,0,e12
+ is NOT in RVI
+.size is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+.global is not an instruction ALPHA CRITERION
+.type is not an instruction ALPHA CRITERION
+__xbrtime_asm_get_startaddr: is not an instruction ALPHA CRITERION
+  eaddi a0,0,e13
+ is NOT in RVI
+.size is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+.globl is not an instruction ALPHA CRITERION
+.type is not an instruction ALPHA CRITERION
+__xbrtime_asm_fence: is not an instruction ALPHA CRITERION
+.size is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+.globl is not an instruction ALPHA CRITERION
+.type is not an instruction ALPHA CRITERION
+__xbrtime_asm_quiet_fence: is not an instruction ALPHA CRITERION
+.size is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+ is not an instruction LENGTH CRITERION
+# is not an instruction ALPHA CRITERION
+# is not an instruction ALPHA CRITERION
+# is not an instruction ALPHA CRITERION
+.globl is not an instruction ALPHA CRITERION
+.type is not an instruction ALPHA CRITERION
+__xbrtime_get_remote_alloc: is not an instruction ALPHA CRITERION
+[line 71] eaddie e10, 0, a1 is in xBGAS
+  eld a0, 0(a0)
+ is NOT in RVI
+UNFOLD:   eld a0, 0(a0)
+-> nop
+.size is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+# is not an instruction ALPHA CRITERION
+# is not an instruction ALPHA CRITERION
+# is not an instruction ALPHA CRITERION
+# is not an instruction ALPHA CRITERION
+.globl is not an instruction ALPHA CRITERION
+.type is not an instruction ALPHA CRITERION
+__xbrtime_remote_touch: is not an instruction ALPHA CRITERION
+[line 83] eaddie e10, 0, a1 is in xBGAS
+  esd a2, 0(a0)
+ is NOT in RVI
+UNFOLD:   esd a2, 0(a0)
+-> nop
+.size is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+#-- is not an instruction ALPHA CRITERION

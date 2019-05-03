@@ -1,0 +1,992 @@
+# is not an instruction ALPHA CRITERION
+# is not an instruction ALPHA CRITERION
+# is not an instruction ALPHA CRITERION
+# is not an instruction ALPHA CRITERION
+# is not an instruction ALPHA CRITERION
+# is not an instruction ALPHA CRITERION
+# is not an instruction ALPHA CRITERION
+# is not an instruction ALPHA CRITERION
+# is not an instruction ALPHA CRITERION
+# is not an instruction ALPHA CRITERION
+# is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+.file is not an instruction ALPHA CRITERION
+.text is not an instruction ALPHA CRITERION
+.align is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+#--------------------------------------------------- is not an instruction ALPHA CRITERION
+# is not an instruction ALPHA CRITERION
+# is not an instruction ALPHA CRITERION
+# is not an instruction ALPHA CRITERION
+# is not an instruction ALPHA CRITERION
+# is not an instruction ALPHA CRITERION
+# is not an instruction ALPHA CRITERION
+# is not an instruction ALPHA CRITERION
+# is not an instruction ALPHA CRITERION
+# is not an instruction ALPHA CRITERION
+# is not an instruction ALPHA CRITERION
+# is not an instruction ALPHA CRITERION
+# is not an instruction ALPHA CRITERION
+# is not an instruction ALPHA CRITERION
+# is not an instruction ALPHA CRITERION
+# is not an instruction ALPHA CRITERION
+#--------------------------------------------------- is not an instruction ALPHA CRITERION
+# is not an instruction ALPHA CRITERION
+# is not an instruction ALPHA CRITERION
+# is not an instruction ALPHA CRITERION
+# is not an instruction ALPHA CRITERION
+# is not an instruction ALPHA CRITERION
+# is not an instruction ALPHA CRITERION
+# is not an instruction ALPHA CRITERION
+# is not an instruction ALPHA CRITERION
+# is not an instruction ALPHA CRITERION
+# is not an instruction ALPHA CRITERION
+# is not an instruction ALPHA CRITERION
+# is not an instruction ALPHA CRITERION
+# is not an instruction ALPHA CRITERION
+# is not an instruction ALPHA CRITERION
+#--------------------------------------------------- is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+.global is not an instruction ALPHA CRITERION
+.type is not an instruction ALPHA CRITERION
+__xbrtime_get_u1_seq: is not an instruction ALPHA CRITERION
+[line 53] eaddie e10, 0, a2 is in xBGAS
+  mv x31, zero
+ is NOT in RVI
+UNFOLD:   mv x31, zero
+-> add x31, zero, x0
+.get_u1_seq: is not an instruction ALPHA CRITERION
+[line 56] elbu x30, 0(a0) is in xBGAS
+.size is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+#--------------------------------------------------- is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+.global is not an instruction ALPHA CRITERION
+.type is not an instruction ALPHA CRITERION
+__xbrtime_get_u1_unr: is not an instruction ALPHA CRITERION
+[line 70] eaddie e10, 0, a2 #pe source 0 is in xBGAS
+[line 71] eaddie e16, 0, a2 #pe source 1 is in xBGAS
+[line 72] eaddie e17, 0, a2 #pe source 2 is in xBGAS
+[line 73] eaddie e18, 0, a2 #pe source 3 is in xBGAS
+  mv x31, zero
+ is NOT in RVI
+UNFOLD:   mv x31, zero
+-> add x31, zero, x0
+.get_u1_unr: is not an instruction ALPHA CRITERION
+[line 82] elbu x22, 0(x10)  #load 0 is in xBGAS
+[line 83] elbu x23, 0(x16)  #load 1 is in xBGAS
+[line 84] elbu x24, 0(x17)  #load 2 is in xBGAS
+[line 85] elbu x25, 0(x18)  #load 3 is in xBGAS
+ is not an instruction LENGTH CRITERION
+  beqz a5,.get_u1_unr_eject
+ is NOT in RVI
+UNFOLD:   beqz a5,.get_u1_unr_eject
+-> beq a5, x0, .get_u1_unr_eject
+ is not an instruction LENGTH CRITERION
+  mv x31, zero
+ is NOT in RVI
+UNFOLD:   mv x31, zero
+-> add x31, zero, x0
+.get_u1_unr_epi: is not an instruction ALPHA CRITERION
+[line 105] elbu x22, 0(x10)  #load 0 is in xBGAS
+.get_u1_unr_eject: is not an instruction ALPHA CRITERION
+.size is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+#--------------------------------------------------- is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+.global is not an instruction ALPHA CRITERION
+.type is not an instruction ALPHA CRITERION
+__xbrtime_get_u2_seq: is not an instruction ALPHA CRITERION
+[line 120] eaddie e10, 0, a2 is in xBGAS
+  mv x31, zero
+ is NOT in RVI
+UNFOLD:   mv x31, zero
+-> add x31, zero, x0
+.get_u2_seq: is not an instruction ALPHA CRITERION
+[line 123] elhu x30, 0(a0) is in xBGAS
+.size is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+#--------------------------------------------------- is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+.global is not an instruction ALPHA CRITERION
+.type is not an instruction ALPHA CRITERION
+__xbrtime_get_u2_unr: is not an instruction ALPHA CRITERION
+[line 137] eaddie e10, 0, a2 #pe source 0 is in xBGAS
+[line 138] eaddie e16, 0, a2 #pe source 1 is in xBGAS
+[line 139] eaddie e17, 0, a2 #pe source 2 is in xBGAS
+[line 140] eaddie e18, 0, a2 #pe source 3 is in xBGAS
+  mv x31, zero
+ is NOT in RVI
+UNFOLD:   mv x31, zero
+-> add x31, zero, x0
+.get_u2_unr: is not an instruction ALPHA CRITERION
+[line 149] elhu x22, 0(x10)  #load 0 is in xBGAS
+[line 150] elhu x23, 0(x16)  #load 1 is in xBGAS
+[line 151] elhu x24, 0(x17)  #load 2 is in xBGAS
+[line 152] elhu x25, 0(x18)  #load 3 is in xBGAS
+ is not an instruction LENGTH CRITERION
+  beqz a5,.get_u2_unr_eject
+ is NOT in RVI
+UNFOLD:   beqz a5,.get_u2_unr_eject
+-> beq a5, x0, .get_u2_unr_eject
+ is not an instruction LENGTH CRITERION
+  mv x31, zero
+ is NOT in RVI
+UNFOLD:   mv x31, zero
+-> add x31, zero, x0
+.get_u2_unr_epi: is not an instruction ALPHA CRITERION
+[line 172] elhu x22, 0(x10)  #load 0 is in xBGAS
+.get_u2_unr_eject: is not an instruction ALPHA CRITERION
+.size is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+#--------------------------------------------------- is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+.global is not an instruction ALPHA CRITERION
+.type is not an instruction ALPHA CRITERION
+__xbrtime_get_u4_seq: is not an instruction ALPHA CRITERION
+[line 187] eaddie e10, 0, a2 is in xBGAS
+  mv x31, zero
+ is NOT in RVI
+UNFOLD:   mv x31, zero
+-> add x31, zero, x0
+.get_u4_seq: is not an instruction ALPHA CRITERION
+[line 190] elw x30, 0(a0) is in xBGAS
+.size is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+#--------------------------------------------------- is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+.global is not an instruction ALPHA CRITERION
+.type is not an instruction ALPHA CRITERION
+__xbrtime_get_u4_unr: is not an instruction ALPHA CRITERION
+[line 204] eaddie e10, 0, a2 #pe source 0 is in xBGAS
+[line 205] eaddie e16, 0, a2 #pe source 1 is in xBGAS
+[line 206] eaddie e17, 0, a2 #pe source 2 is in xBGAS
+[line 207] eaddie e18, 0, a2 #pe source 3 is in xBGAS
+  mv x31, zero
+ is NOT in RVI
+UNFOLD:   mv x31, zero
+-> add x31, zero, x0
+.get_u4_unr: is not an instruction ALPHA CRITERION
+[line 216] elw x22, 0(x10)  #load 0 is in xBGAS
+[line 217] elw x23, 0(x16)  #load 1 is in xBGAS
+[line 218] elw x24, 0(x17)  #load 2 is in xBGAS
+[line 219] elw x25, 0(x18)  #load 3 is in xBGAS
+ is not an instruction LENGTH CRITERION
+  beqz a5,.get_u4_unr_eject
+ is NOT in RVI
+UNFOLD:   beqz a5,.get_u4_unr_eject
+-> beq a5, x0, .get_u4_unr_eject
+ is not an instruction LENGTH CRITERION
+  mv x31, zero
+ is NOT in RVI
+UNFOLD:   mv x31, zero
+-> add x31, zero, x0
+.get_u4_unr_epi: is not an instruction ALPHA CRITERION
+[line 239] elw x22, 0(x10)  #load 0 is in xBGAS
+.get_u4_unr_eject: is not an instruction ALPHA CRITERION
+.size is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+#--------------------------------------------------- is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+.global is not an instruction ALPHA CRITERION
+.type is not an instruction ALPHA CRITERION
+__xbrtime_get_u8_seq: is not an instruction ALPHA CRITERION
+[line 254] eaddie e10, 0, a2 is in xBGAS
+  mv x31, zero
+ is NOT in RVI
+UNFOLD:   mv x31, zero
+-> add x31, zero, x0
+.get_u8_seq: is not an instruction ALPHA CRITERION
+  eld x30, 0(a0)
+ is NOT in RVI
+UNFOLD:   eld x30, 0(a0)
+-> nop
+  sd x30, 0(a1)
+ is NOT in RVI
+UNFOLD:   sd x30, 0(a1)
+-> nop
+.size is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+#--------------------------------------------------- is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+.global is not an instruction ALPHA CRITERION
+.type is not an instruction ALPHA CRITERION
+__xbrtime_get_u8_unr: is not an instruction ALPHA CRITERION
+[line 271] eaddie e10, 0, a2 #pe source 0 is in xBGAS
+[line 272] eaddie e16, 0, a2 #pe source 1 is in xBGAS
+[line 273] eaddie e17, 0, a2 #pe source 2 is in xBGAS
+[line 274] eaddie e18, 0, a2 #pe source 3 is in xBGAS
+  mv x31, zero
+ is NOT in RVI
+UNFOLD:   mv x31, zero
+-> add x31, zero, x0
+.get_u8_unr: is not an instruction ALPHA CRITERION
+  eld x22, 0(x10)  #load 0
+ is NOT in RVI
+UNFOLD:   eld x22, 0(x10)  #load 0
+-> nop
+  eld x23, 0(x16)  #load 1
+ is NOT in RVI
+UNFOLD:   eld x23, 0(x16)  #load 1
+-> nop
+  eld x24, 0(x17)  #load 2
+ is NOT in RVI
+UNFOLD:   eld x24, 0(x17)  #load 2
+-> nop
+  eld x25, 0(x18)  #load 3
+ is NOT in RVI
+UNFOLD:   eld x25, 0(x18)  #load 3
+-> nop
+  sd x22, 0(x11)    #store 0
+ is NOT in RVI
+UNFOLD:   sd x22, 0(x11)    #store 0
+-> nop
+  sd x23, 0(x19)    #store 1
+ is NOT in RVI
+UNFOLD:   sd x23, 0(x19)    #store 1
+-> nop
+  sd x24, 0(x20)    #store 2
+ is NOT in RVI
+UNFOLD:   sd x24, 0(x20)    #store 2
+-> nop
+  sd x25, 0(x21)    #store 3
+ is NOT in RVI
+UNFOLD:   sd x25, 0(x21)    #store 3
+-> nop
+ is not an instruction LENGTH CRITERION
+  beqz a5,.get_u8_unr_eject
+ is NOT in RVI
+UNFOLD:   beqz a5,.get_u8_unr_eject
+-> beq a5, x0, .get_u8_unr_eject
+ is not an instruction LENGTH CRITERION
+  mv x31, zero
+ is NOT in RVI
+UNFOLD:   mv x31, zero
+-> add x31, zero, x0
+.get_u8_unr_epi: is not an instruction ALPHA CRITERION
+  eld x22, 0(x10)  #load 0
+ is NOT in RVI
+UNFOLD:   eld x22, 0(x10)  #load 0
+-> nop
+  sd x22, 0(x11)    #store 0
+ is NOT in RVI
+UNFOLD:   sd x22, 0(x11)    #store 0
+-> nop
+.get_u8_unr_eject: is not an instruction ALPHA CRITERION
+.size is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+#--------------------------------------------------- is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+.global is not an instruction ALPHA CRITERION
+.type is not an instruction ALPHA CRITERION
+__xbrtime_get_s1_seq: is not an instruction ALPHA CRITERION
+[line 321] eaddie e10, 0, a2 is in xBGAS
+  mv x31, zero
+ is NOT in RVI
+UNFOLD:   mv x31, zero
+-> add x31, zero, x0
+.get_s1_seq: is not an instruction ALPHA CRITERION
+[line 324] elb x30, 0(a0) is in xBGAS
+.size is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+#--------------------------------------------------- is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+.global is not an instruction ALPHA CRITERION
+.type is not an instruction ALPHA CRITERION
+__xbrtime_get_s1_unr: is not an instruction ALPHA CRITERION
+[line 338] eaddie e10, 0, a2 #pe source 0 is in xBGAS
+[line 339] eaddie e16, 0, a2 #pe source 1 is in xBGAS
+[line 340] eaddie e17, 0, a2 #pe source 2 is in xBGAS
+[line 341] eaddie e18, 0, a2 #pe source 3 is in xBGAS
+  mv x31, zero
+ is NOT in RVI
+UNFOLD:   mv x31, zero
+-> add x31, zero, x0
+.get_s1_unr: is not an instruction ALPHA CRITERION
+[line 350] elb x22, 0(x10)   #load 0 is in xBGAS
+[line 351] elb x23, 0(x16)   #load 1 is in xBGAS
+[line 352] elb x24, 0(x17)   #load 2 is in xBGAS
+[line 353] elb x25, 0(x18)   #load 3 is in xBGAS
+ is not an instruction LENGTH CRITERION
+  beqz a5,.get_s1_unr_eject
+ is NOT in RVI
+UNFOLD:   beqz a5,.get_s1_unr_eject
+-> beq a5, x0, .get_s1_unr_eject
+ is not an instruction LENGTH CRITERION
+  mv x31, zero
+ is NOT in RVI
+UNFOLD:   mv x31, zero
+-> add x31, zero, x0
+.get_s1_unr_epi: is not an instruction ALPHA CRITERION
+[line 373] elb x22, 0(x10)   #load 0 is in xBGAS
+.get_s1_unr_eject: is not an instruction ALPHA CRITERION
+.size is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+#--------------------------------------------------- is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+.global is not an instruction ALPHA CRITERION
+.type is not an instruction ALPHA CRITERION
+__xbrtime_get_s2_seq: is not an instruction ALPHA CRITERION
+[line 388] eaddie e10, 0, a2 is in xBGAS
+  mv x31, zero
+ is NOT in RVI
+UNFOLD:   mv x31, zero
+-> add x31, zero, x0
+.get_s2_seq: is not an instruction ALPHA CRITERION
+[line 391] elh x30, 0(a0) is in xBGAS
+.size is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+#--------------------------------------------------- is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+.global is not an instruction ALPHA CRITERION
+.type is not an instruction ALPHA CRITERION
+__xbrtime_get_s2_unr: is not an instruction ALPHA CRITERION
+[line 405] eaddie e10, 0, a2 #pe source 0 is in xBGAS
+[line 406] eaddie e16, 0, a2 #pe source 1 is in xBGAS
+[line 407] eaddie e17, 0, a2 #pe source 2 is in xBGAS
+[line 408] eaddie e18, 0, a2 #pe source 3 is in xBGAS
+  mv x31, zero
+ is NOT in RVI
+UNFOLD:   mv x31, zero
+-> add x31, zero, x0
+.get_s2_unr: is not an instruction ALPHA CRITERION
+[line 417] elh x22, 0(x10)   #load 0 is in xBGAS
+[line 418] elh x23, 0(x16)   #load 1 is in xBGAS
+[line 419] elh x24, 0(x17)   #load 2 is in xBGAS
+[line 420] elh x25, 0(x18)   #load 3 is in xBGAS
+ is not an instruction LENGTH CRITERION
+  beqz a5,.get_s2_unr_eject
+ is NOT in RVI
+UNFOLD:   beqz a5,.get_s2_unr_eject
+-> beq a5, x0, .get_s2_unr_eject
+ is not an instruction LENGTH CRITERION
+  mv x31, zero
+ is NOT in RVI
+UNFOLD:   mv x31, zero
+-> add x31, zero, x0
+.get_s2_unr_epi: is not an instruction ALPHA CRITERION
+[line 440] elh x22, 0(x10)   #load 0 is in xBGAS
+.get_s2_unr_eject: is not an instruction ALPHA CRITERION
+.size is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+#--------------------------------------------------- is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+.global is not an instruction ALPHA CRITERION
+.type is not an instruction ALPHA CRITERION
+__xbrtime_get_s4_seq: is not an instruction ALPHA CRITERION
+[line 455] eaddie e10, 0, a2 is in xBGAS
+  mv x31, zero
+ is NOT in RVI
+UNFOLD:   mv x31, zero
+-> add x31, zero, x0
+.get_s4_seq: is not an instruction ALPHA CRITERION
+[line 458] elw x30, 0(a0) is in xBGAS
+.size is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+#--------------------------------------------------- is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+.global is not an instruction ALPHA CRITERION
+.type is not an instruction ALPHA CRITERION
+__xbrtime_get_s4_unr: is not an instruction ALPHA CRITERION
+[line 472] eaddie e10, 0, a2 #pe source 0 is in xBGAS
+[line 473] eaddie e16, 0, a2 #pe source 1 is in xBGAS
+[line 474] eaddie e17, 0, a2 #pe source 2 is in xBGAS
+[line 475] eaddie e18, 0, a2 #pe source 3 is in xBGAS
+  mv x31, zero
+ is NOT in RVI
+UNFOLD:   mv x31, zero
+-> add x31, zero, x0
+.get_s4_unr: is not an instruction ALPHA CRITERION
+[line 484] elw x22, 0(x10)   #load 0 is in xBGAS
+[line 485] elw x23, 0(x16)   #load 1 is in xBGAS
+[line 486] elw x24, 0(x17)   #load 2 is in xBGAS
+[line 487] elw x25, 0(x18)   #load 3 is in xBGAS
+ is not an instruction LENGTH CRITERION
+  beqz a5,.get_s4_unr_eject
+ is NOT in RVI
+UNFOLD:   beqz a5,.get_s4_unr_eject
+-> beq a5, x0, .get_s4_unr_eject
+ is not an instruction LENGTH CRITERION
+  mv x31, zero
+ is NOT in RVI
+UNFOLD:   mv x31, zero
+-> add x31, zero, x0
+.get_s4_unr_epi: is not an instruction ALPHA CRITERION
+[line 507] elw x22, 0(x10)   #load 0 is in xBGAS
+.get_s4_unr_eject: is not an instruction ALPHA CRITERION
+.size is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+#--------------------------------------------------- is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+.global is not an instruction ALPHA CRITERION
+.type is not an instruction ALPHA CRITERION
+__xbrtime_get_s8_seq: is not an instruction ALPHA CRITERION
+[line 522] eaddie e10, 0, a2 is in xBGAS
+  mv x31, zero
+ is NOT in RVI
+UNFOLD:   mv x31, zero
+-> add x31, zero, x0
+.get_s8_seq: is not an instruction ALPHA CRITERION
+  eld x30, 0(a0)
+ is NOT in RVI
+UNFOLD:   eld x30, 0(a0)
+-> nop
+  sd x30, 0(a1)
+ is NOT in RVI
+UNFOLD:   sd x30, 0(a1)
+-> nop
+.size is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+#--------------------------------------------------- is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+.global is not an instruction ALPHA CRITERION
+.type is not an instruction ALPHA CRITERION
+__xbrtime_get_s8_unr: is not an instruction ALPHA CRITERION
+[line 539] eaddie e10, 0, a2 #pe source 0 is in xBGAS
+[line 540] eaddie e16, 0, a2 #pe source 1 is in xBGAS
+[line 541] eaddie e17, 0, a2 #pe source 2 is in xBGAS
+[line 542] eaddie e18, 0, a2 #pe source 3 is in xBGAS
+  mv x31, zero
+ is NOT in RVI
+UNFOLD:   mv x31, zero
+-> add x31, zero, x0
+.get_s8_unr: is not an instruction ALPHA CRITERION
+  eld x22, 0(x10)   #load 0
+ is NOT in RVI
+UNFOLD:   eld x22, 0(x10)   #load 0
+-> nop
+  eld x23, 0(x16)   #load 1
+ is NOT in RVI
+UNFOLD:   eld x23, 0(x16)   #load 1
+-> nop
+  eld x24, 0(x17)   #load 2
+ is NOT in RVI
+UNFOLD:   eld x24, 0(x17)   #load 2
+-> nop
+  eld x25, 0(x18)   #load 3
+ is NOT in RVI
+UNFOLD:   eld x25, 0(x18)   #load 3
+-> nop
+  sd x22, 0(x11)    #store 0
+ is NOT in RVI
+UNFOLD:   sd x22, 0(x11)    #store 0
+-> nop
+  sd x23, 0(x19)    #store 1
+ is NOT in RVI
+UNFOLD:   sd x23, 0(x19)    #store 1
+-> nop
+  sd x24, 0(x20)    #store 2
+ is NOT in RVI
+UNFOLD:   sd x24, 0(x20)    #store 2
+-> nop
+  sd x25, 0(x21)    #store 3
+ is NOT in RVI
+UNFOLD:   sd x25, 0(x21)    #store 3
+-> nop
+ is not an instruction LENGTH CRITERION
+  beqz a5,.get_s8_unr_eject
+ is NOT in RVI
+UNFOLD:   beqz a5,.get_s8_unr_eject
+-> beq a5, x0, .get_s8_unr_eject
+ is not an instruction LENGTH CRITERION
+  mv x31, zero
+ is NOT in RVI
+UNFOLD:   mv x31, zero
+-> add x31, zero, x0
+.get_s8_unr_epi: is not an instruction ALPHA CRITERION
+  eld x22, 0(x10)   #load 0
+ is NOT in RVI
+UNFOLD:   eld x22, 0(x10)   #load 0
+-> nop
+  sd x22, 0(x11)    #store 0
+ is NOT in RVI
+UNFOLD:   sd x22, 0(x11)    #store 0
+-> nop
+.get_s8_unr_eject: is not an instruction ALPHA CRITERION
+.size is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+#--------------------------------------------------- is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+.global is not an instruction ALPHA CRITERION
+.type is not an instruction ALPHA CRITERION
+__xbrtime_put_u1_seq: is not an instruction ALPHA CRITERION
+[line 589] eaddie e11, 0, a2 is in xBGAS
+  mv x31, zero
+ is NOT in RVI
+UNFOLD:   mv x31, zero
+-> add x31, zero, x0
+.put_u1_seq: is not an instruction ALPHA CRITERION
+[line 595] esb x30, 0(a1) is in xBGAS
+.size is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+#--------------------------------------------------- is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+.global is not an instruction ALPHA CRITERION
+.type is not an instruction ALPHA CRITERION
+__xbrtime_put_u1_unr: is not an instruction ALPHA CRITERION
+[line 606] eaddie e11, 0, a2   #pe dest 0 is in xBGAS
+[line 607] eaddie e19, 0, a2   #pe dest 1 is in xBGAS
+[line 608] eaddie e20, 0, a2   #pe dest 2 is in xBGAS
+[line 609] eaddie e21, 0, a2   #pe dest 3 is in xBGAS
+  mv x31, zero
+ is NOT in RVI
+UNFOLD:   mv x31, zero
+-> add x31, zero, x0
+.put_u1_unr: is not an instruction ALPHA CRITERION
+[line 627] esb x22, 0(x11)     #store 0 is in xBGAS
+[line 629] esb x23, 0(x19)     #store 1 is in xBGAS
+[line 631] esb x24, 0(x20)     #store 2 is in xBGAS
+[line 633] esb x25, 0(x21)     #store 3 is in xBGAS
+ is not an instruction LENGTH CRITERION
+  beqz a5,.put_u1_unr_eject
+ is NOT in RVI
+UNFOLD:   beqz a5,.put_u1_unr_eject
+-> beq a5, x0, .put_u1_unr_eject
+ is not an instruction LENGTH CRITERION
+  mv x31, zero
+ is NOT in RVI
+UNFOLD:   mv x31, zero
+-> add x31, zero, x0
+.put_u1_unr_epi: is not an instruction ALPHA CRITERION
+[line 644] esb x22, 0(x11)     #store 0 is in xBGAS
+.put_u1_unr_eject: is not an instruction ALPHA CRITERION
+.size is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+#--------------------------------------------------- is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+.global is not an instruction ALPHA CRITERION
+.type is not an instruction ALPHA CRITERION
+__xbrtime_put_u2_seq: is not an instruction ALPHA CRITERION
+[line 656] eaddie e11, 0, a2 is in xBGAS
+  mv x31, zero
+ is NOT in RVI
+UNFOLD:   mv x31, zero
+-> add x31, zero, x0
+.put_u2_seq: is not an instruction ALPHA CRITERION
+[line 662] esh x30, 0(a1) is in xBGAS
+.size is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+#--------------------------------------------------- is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+.global is not an instruction ALPHA CRITERION
+.type is not an instruction ALPHA CRITERION
+__xbrtime_put_u2_unr: is not an instruction ALPHA CRITERION
+[line 673] eaddie e11, 0, a2   #pe dest 0 is in xBGAS
+[line 674] eaddie e19, 0, a2   #pe dest 1 is in xBGAS
+[line 675] eaddie e20, 0, a2   #pe dest 2 is in xBGAS
+[line 676] eaddie e21, 0, a2   #pe dest 3 is in xBGAS
+  mv x31, zero
+ is NOT in RVI
+UNFOLD:   mv x31, zero
+-> add x31, zero, x0
+.put_u2_unr: is not an instruction ALPHA CRITERION
+[line 694] esh x22, 0(x11)     #store 0 is in xBGAS
+[line 696] esh x23, 0(x19)     #store 1 is in xBGAS
+[line 698] esh x24, 0(x20)     #store 2 is in xBGAS
+[line 700] esh x25, 0(x21)     #store 3 is in xBGAS
+ is not an instruction LENGTH CRITERION
+  beqz a5,.put_u2_unr_eject
+ is NOT in RVI
+UNFOLD:   beqz a5,.put_u2_unr_eject
+-> beq a5, x0, .put_u2_unr_eject
+ is not an instruction LENGTH CRITERION
+  mv x31, zero
+ is NOT in RVI
+UNFOLD:   mv x31, zero
+-> add x31, zero, x0
+.put_u2_unr_epi: is not an instruction ALPHA CRITERION
+[line 711] esh x22, 0(x11)     #store 0 is in xBGAS
+.put_u2_unr_eject: is not an instruction ALPHA CRITERION
+.size is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+#--------------------------------------------------- is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+.global is not an instruction ALPHA CRITERION
+.type is not an instruction ALPHA CRITERION
+__xbrtime_put_u4_seq: is not an instruction ALPHA CRITERION
+[line 723] eaddie e11, 0, a2 is in xBGAS
+  mv x31, zero
+ is NOT in RVI
+UNFOLD:   mv x31, zero
+-> add x31, zero, x0
+.put_u4_seq: is not an instruction ALPHA CRITERION
+  lwu x30, 0(a0)
+ is NOT in RVI
+UNFOLD:   lwu x30, 0(a0)
+-> lw x30, 0(a0)
+[line 729] esw x30, 0(a1) is in xBGAS
+.size is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+#--------------------------------------------------- is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+.global is not an instruction ALPHA CRITERION
+.type is not an instruction ALPHA CRITERION
+__xbrtime_put_u4_unr: is not an instruction ALPHA CRITERION
+[line 740] eaddie e11, 0, a2   #pe dest 0 is in xBGAS
+[line 741] eaddie e19, 0, a2   #pe dest 1 is in xBGAS
+[line 742] eaddie e20, 0, a2   #pe dest 2 is in xBGAS
+[line 743] eaddie e21, 0, a2   #pe dest 3 is in xBGAS
+  mv x31, zero
+ is NOT in RVI
+UNFOLD:   mv x31, zero
+-> add x31, zero, x0
+.put_u4_unr: is not an instruction ALPHA CRITERION
+  lwu x22, 0(x10)     #load 0
+ is NOT in RVI
+UNFOLD:   lwu x22, 0(x10)     #load 0
+-> lw x22, 0(x10)
+  lwu x23, 0(x16)     #load 1
+ is NOT in RVI
+UNFOLD:   lwu x23, 0(x16)     #load 1
+-> lw x23, 0(x16)
+  lwu x24, 0(x17)     #load 2
+ is NOT in RVI
+UNFOLD:   lwu x24, 0(x17)     #load 2
+-> lw x24, 0(x17)
+  lwu x25, 0(x18)     #load 3
+ is NOT in RVI
+UNFOLD:   lwu x25, 0(x18)     #load 3
+-> lw x25, 0(x18)
+[line 761] esw x22, 0(x11)     #store 0 is in xBGAS
+[line 763] esw x23, 0(x19)     #store 1 is in xBGAS
+[line 765] esw x24, 0(x20)     #store 2 is in xBGAS
+[line 767] esw x25, 0(x21)     #store 3 is in xBGAS
+ is not an instruction LENGTH CRITERION
+  beqz a5,.put_u4_unr_eject
+ is NOT in RVI
+UNFOLD:   beqz a5,.put_u4_unr_eject
+-> beq a5, x0, .put_u4_unr_eject
+ is not an instruction LENGTH CRITERION
+  mv x31, zero
+ is NOT in RVI
+UNFOLD:   mv x31, zero
+-> add x31, zero, x0
+.put_u4_unr_epi: is not an instruction ALPHA CRITERION
+  lwu x22, 0(x10)     #load 0
+ is NOT in RVI
+UNFOLD:   lwu x22, 0(x10)     #load 0
+-> lw x22, 0(x10)
+[line 778] esw x22, 0(x11)     #store 0 is in xBGAS
+.put_u4_unr_eject: is not an instruction ALPHA CRITERION
+.size is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+#--------------------------------------------------- is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+.global is not an instruction ALPHA CRITERION
+.type is not an instruction ALPHA CRITERION
+__xbrtime_put_u8_seq: is not an instruction ALPHA CRITERION
+[line 790] eaddie e11, 0, a2 is in xBGAS
+  mv x31, zero
+ is NOT in RVI
+UNFOLD:   mv x31, zero
+-> add x31, zero, x0
+.put_u8_seq: is not an instruction ALPHA CRITERION
+  ld x30, 0(a0)
+ is NOT in RVI
+UNFOLD:   ld x30, 0(a0)
+-> nop
+  esd x30, 0(a1)
+ is NOT in RVI
+UNFOLD:   esd x30, 0(a1)
+-> nop
+.size is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+#--------------------------------------------------- is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+.global is not an instruction ALPHA CRITERION
+.type is not an instruction ALPHA CRITERION
+__xbrtime_put_u8_unr: is not an instruction ALPHA CRITERION
+[line 807] eaddie e11, 0, a2   #pe dest 0 is in xBGAS
+[line 808] eaddie e19, 0, a2   #pe dest 1 is in xBGAS
+[line 809] eaddie e20, 0, a2   #pe dest 2 is in xBGAS
+[line 810] eaddie e21, 0, a2   #pe dest 3 is in xBGAS
+  mv x31, zero
+ is NOT in RVI
+UNFOLD:   mv x31, zero
+-> add x31, zero, x0
+.put_u8_unr: is not an instruction ALPHA CRITERION
+  ld x22, 0(x10)      #load 0
+ is NOT in RVI
+UNFOLD:   ld x22, 0(x10)      #load 0
+-> nop
+  ld x23, 0(x16)      #load 1
+ is NOT in RVI
+UNFOLD:   ld x23, 0(x16)      #load 1
+-> nop
+  ld x24, 0(x17)      #load 2
+ is NOT in RVI
+UNFOLD:   ld x24, 0(x17)      #load 2
+-> nop
+  ld x25, 0(x18)      #load 3
+ is NOT in RVI
+UNFOLD:   ld x25, 0(x18)      #load 3
+-> nop
+  esd x22, 0(x11)     #store 0
+ is NOT in RVI
+UNFOLD:   esd x22, 0(x11)     #store 0
+-> nop
+  esd x23, 0(x19)     #store 1
+ is NOT in RVI
+UNFOLD:   esd x23, 0(x19)     #store 1
+-> nop
+  esd x24, 0(x20)     #store 2
+ is NOT in RVI
+UNFOLD:   esd x24, 0(x20)     #store 2
+-> nop
+  esd x25, 0(x21)     #store 3
+ is NOT in RVI
+UNFOLD:   esd x25, 0(x21)     #store 3
+-> nop
+ is not an instruction LENGTH CRITERION
+  beqz a5,.put_u8_unr_eject
+ is NOT in RVI
+UNFOLD:   beqz a5,.put_u8_unr_eject
+-> beq a5, x0, .put_u8_unr_eject
+ is not an instruction LENGTH CRITERION
+  mv x31, zero
+ is NOT in RVI
+UNFOLD:   mv x31, zero
+-> add x31, zero, x0
+.put_u8_unr_epi: is not an instruction ALPHA CRITERION
+  ld x22, 0(x10)      #load 0
+ is NOT in RVI
+UNFOLD:   ld x22, 0(x10)      #load 0
+-> nop
+  esd x22, 0(x11)     #store 0
+ is NOT in RVI
+UNFOLD:   esd x22, 0(x11)     #store 0
+-> nop
+.put_u8_unr_eject: is not an instruction ALPHA CRITERION
+.size is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+#--------------------------------------------------- is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+.global is not an instruction ALPHA CRITERION
+.type is not an instruction ALPHA CRITERION
+__xbrtime_put_s1_seq: is not an instruction ALPHA CRITERION
+[line 857] eaddie e11, 0, a2 is in xBGAS
+  mv x31, zero
+ is NOT in RVI
+UNFOLD:   mv x31, zero
+-> add x31, zero, x0
+.put_s1_seq: is not an instruction ALPHA CRITERION
+[line 863] esb x30, 0(a1) is in xBGAS
+.size is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+#--------------------------------------------------- is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+.global is not an instruction ALPHA CRITERION
+.type is not an instruction ALPHA CRITERION
+__xbrtime_put_s1_unr: is not an instruction ALPHA CRITERION
+[line 874] eaddie e11, 0, a2   #pe dest 0 is in xBGAS
+[line 875] eaddie e19, 0, a2   #pe dest 1 is in xBGAS
+[line 876] eaddie e20, 0, a2   #pe dest 2 is in xBGAS
+[line 877] eaddie e21, 0, a2   #pe dest 3 is in xBGAS
+  mv x31, zero
+ is NOT in RVI
+UNFOLD:   mv x31, zero
+-> add x31, zero, x0
+.put_s1_unr: is not an instruction ALPHA CRITERION
+[line 895] esb x22, 0(x11)     #store 0 is in xBGAS
+[line 897] esb x23, 0(x19)     #store 1 is in xBGAS
+[line 899] esb x24, 0(x20)     #store 2 is in xBGAS
+[line 901] esb x25, 0(x21)     #store 3 is in xBGAS
+ is not an instruction LENGTH CRITERION
+  beqz a5,.put_s1_unr_eject
+ is NOT in RVI
+UNFOLD:   beqz a5,.put_s1_unr_eject
+-> beq a5, x0, .put_s1_unr_eject
+ is not an instruction LENGTH CRITERION
+  mv x31, zero
+ is NOT in RVI
+UNFOLD:   mv x31, zero
+-> add x31, zero, x0
+.put_s1_unr_epi: is not an instruction ALPHA CRITERION
+[line 912] esb x22, 0(x11)     #store 0 is in xBGAS
+.put_s1_unr_eject: is not an instruction ALPHA CRITERION
+.size is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+#--------------------------------------------------- is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+.global is not an instruction ALPHA CRITERION
+.type is not an instruction ALPHA CRITERION
+__xbrtime_put_s2_seq: is not an instruction ALPHA CRITERION
+[line 924] eaddie e11, 0, a2 is in xBGAS
+  mv x31, zero
+ is NOT in RVI
+UNFOLD:   mv x31, zero
+-> add x31, zero, x0
+.put_s2_seq: is not an instruction ALPHA CRITERION
+[line 930] esh x30, 0(a1) is in xBGAS
+.size is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+#--------------------------------------------------- is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+.global is not an instruction ALPHA CRITERION
+.type is not an instruction ALPHA CRITERION
+__xbrtime_put_s2_unr: is not an instruction ALPHA CRITERION
+[line 941] eaddie e11, 0, a2   #pe dest 0 is in xBGAS
+[line 942] eaddie e19, 0, a2   #pe dest 1 is in xBGAS
+[line 943] eaddie e20, 0, a2   #pe dest 2 is in xBGAS
+[line 944] eaddie e21, 0, a2   #pe dest 3 is in xBGAS
+  mv x31, zero
+ is NOT in RVI
+UNFOLD:   mv x31, zero
+-> add x31, zero, x0
+.put_s2_unr: is not an instruction ALPHA CRITERION
+[line 962] esh x22, 0(x11)     #store 0 is in xBGAS
+[line 964] esh x23, 0(x19)     #store 1 is in xBGAS
+[line 966] esh x24, 0(x20)     #store 2 is in xBGAS
+[line 968] esh x25, 0(x21)     #store 3 is in xBGAS
+ is not an instruction LENGTH CRITERION
+  beqz a5,.put_s2_unr_eject
+ is NOT in RVI
+UNFOLD:   beqz a5,.put_s2_unr_eject
+-> beq a5, x0, .put_s2_unr_eject
+ is not an instruction LENGTH CRITERION
+  mv x31, zero
+ is NOT in RVI
+UNFOLD:   mv x31, zero
+-> add x31, zero, x0
+.put_s2_unr_epi: is not an instruction ALPHA CRITERION
+[line 979] esh x22, 0(x11)     #store 0 is in xBGAS
+.put_s2_unr_eject: is not an instruction ALPHA CRITERION
+.size is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+#--------------------------------------------------- is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+.global is not an instruction ALPHA CRITERION
+.type is not an instruction ALPHA CRITERION
+__xbrtime_put_s4_seq: is not an instruction ALPHA CRITERION
+[line 991] eaddie e11, 0, a2 is in xBGAS
+  mv x31, zero
+ is NOT in RVI
+UNFOLD:   mv x31, zero
+-> add x31, zero, x0
+.put_s4_seq: is not an instruction ALPHA CRITERION
+[line 997] esw x30, 0(a1) is in xBGAS
+.size is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+#--------------------------------------------------- is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+.global is not an instruction ALPHA CRITERION
+.type is not an instruction ALPHA CRITERION
+__xbrtime_put_s4_unr: is not an instruction ALPHA CRITERION
+[line 1008] eaddie e11, 0, a2   #pe dest 0 is in xBGAS
+[line 1009] eaddie e19, 0, a2   #pe dest 1 is in xBGAS
+[line 1010] eaddie e20, 0, a2   #pe dest 2 is in xBGAS
+[line 1011] eaddie e21, 0, a2   #pe dest 3 is in xBGAS
+  mv x31, zero
+ is NOT in RVI
+UNFOLD:   mv x31, zero
+-> add x31, zero, x0
+.put_s4_unr: is not an instruction ALPHA CRITERION
+[line 1029] esw x22, 0(x11)     #store 0 is in xBGAS
+[line 1031] esw x23, 0(x19)     #store 1 is in xBGAS
+[line 1033] esw x24, 0(x20)     #store 2 is in xBGAS
+[line 1035] esw x25, 0(x21)     #store 3 is in xBGAS
+ is not an instruction LENGTH CRITERION
+  beqz a5,.put_s4_unr_eject
+ is NOT in RVI
+UNFOLD:   beqz a5,.put_s4_unr_eject
+-> beq a5, x0, .put_s4_unr_eject
+ is not an instruction LENGTH CRITERION
+  mv x31, zero
+ is NOT in RVI
+UNFOLD:   mv x31, zero
+-> add x31, zero, x0
+.put_s4_unr_epi: is not an instruction ALPHA CRITERION
+[line 1046] esw x22, 0(x11)     #store 0 is in xBGAS
+.put_s4_unr_eject: is not an instruction ALPHA CRITERION
+.size is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+#--------------------------------------------------- is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+.global is not an instruction ALPHA CRITERION
+.type is not an instruction ALPHA CRITERION
+__xbrtime_put_s8_seq: is not an instruction ALPHA CRITERION
+[line 1058] eaddie e11, 0, a2 is in xBGAS
+  mv x31, zero
+ is NOT in RVI
+UNFOLD:   mv x31, zero
+-> add x31, zero, x0
+.put_s8_seq: is not an instruction ALPHA CRITERION
+  ld x30, 0(a0)
+ is NOT in RVI
+UNFOLD:   ld x30, 0(a0)
+-> nop
+  esd x30, 0(a1)
+ is NOT in RVI
+UNFOLD:   esd x30, 0(a1)
+-> nop
+.size is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+#--------------------------------------------------- is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+.global is not an instruction ALPHA CRITERION
+.type is not an instruction ALPHA CRITERION
+__xbrtime_put_s8_unr: is not an instruction ALPHA CRITERION
+[line 1075] eaddie e11, 0, a2   #pe dest 0 is in xBGAS
+[line 1076] eaddie e19, 0, a2   #pe dest 1 is in xBGAS
+[line 1077] eaddie e20, 0, a2   #pe dest 2 is in xBGAS
+[line 1078] eaddie e21, 0, a2   #pe dest 3 is in xBGAS
+  mv x31, zero
+ is NOT in RVI
+UNFOLD:   mv x31, zero
+-> add x31, zero, x0
+.put_s8_unr: is not an instruction ALPHA CRITERION
+  ld x22, 0(x10)      #load 0
+ is NOT in RVI
+UNFOLD:   ld x22, 0(x10)      #load 0
+-> nop
+  ld x23, 0(x16)      #load 1
+ is NOT in RVI
+UNFOLD:   ld x23, 0(x16)      #load 1
+-> nop
+  ld x24, 0(x17)      #load 2
+ is NOT in RVI
+UNFOLD:   ld x24, 0(x17)      #load 2
+-> nop
+  ld x25, 0(x18)      #load 3
+ is NOT in RVI
+UNFOLD:   ld x25, 0(x18)      #load 3
+-> nop
+  esd x22, 0(x11)     #store 0
+ is NOT in RVI
+UNFOLD:   esd x22, 0(x11)     #store 0
+-> nop
+  esd x23, 0(x19)     #store 1
+ is NOT in RVI
+UNFOLD:   esd x23, 0(x19)     #store 1
+-> nop
+  esd x24, 0(x20)     #store 2
+ is NOT in RVI
+UNFOLD:   esd x24, 0(x20)     #store 2
+-> nop
+  esd x25, 0(x21)     #store 3
+ is NOT in RVI
+UNFOLD:   esd x25, 0(x21)     #store 3
+-> nop
+ is not an instruction LENGTH CRITERION
+  beqz a5,.put_s8_unr_eject
+ is NOT in RVI
+UNFOLD:   beqz a5,.put_s8_unr_eject
+-> beq a5, x0, .put_s8_unr_eject
+ is not an instruction LENGTH CRITERION
+  mv x31, zero
+ is NOT in RVI
+UNFOLD:   mv x31, zero
+-> add x31, zero, x0
+.put_s8_unr_epi: is not an instruction ALPHA CRITERION
+  ld x22, 0(x10)      #load 0
+ is NOT in RVI
+UNFOLD:   ld x22, 0(x10)      #load 0
+-> nop
+  esd x22, 0(x11)     #store 0
+ is NOT in RVI
+UNFOLD:   esd x22, 0(x11)     #store 0
+-> nop
+.put_s8_unr_eject: is not an instruction ALPHA CRITERION
+.size is not an instruction ALPHA CRITERION
+ is not an instruction LENGTH CRITERION
+#-- is not an instruction ALPHA CRITERION

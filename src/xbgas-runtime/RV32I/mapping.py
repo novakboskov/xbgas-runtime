@@ -8,11 +8,12 @@
 # only RV64 assembler. To support our BRISCV-based xBGAS
 # implementation, we have to compile the code using BRISCV compilation
 # process which is RV32I based. To link xBGAS API to our code, we have
-# to adapt `src/xbgas-runtime/xbrtime_api_asm.s`. The process is as
-# follows:
-# 1) replace all the non-RV32I instructions with `addi x0, x0, 1`
-# 2) replace all the xBGAS instructions with `addi x0, x0, 0`
-# 3) compile `src/xbgas-runtime/xbrtime_api_asm.s` using BRISCV compilation process
+# to adapt `src/xbgas-runtime/xbrtime_api_asm.s`, `src/xbgas-runtime/xbrtime_cror_asm.s`
+# and `src/xbgas-runtime/xbrtime_util_asm.s`. The process is as follows:
+#
+# 1) replace all the non-RV32I instructions with `non_RVI_placehold`
+# 2) replace all the xBGAS instructions with `xBGAS_placehold`
+# 3) compile the assembly using BRISCV compilation process
 # 4) embed the xBGAS instructions in their binary format to resulting binary
 #    (at the appropriate locations)
 #
@@ -50,8 +51,8 @@ RVI_instrs = ['lb', 'lh', 'lw', 'lbu', 'lhu',
               'wfi',
               'sfence.vm',
               'call', 'ret']
-xBGAS_placehold = 'addi x0, x0, 0'
-non_RVI_placehold = 'addi x0, x0, 1'
+xBGAS_placehold = 'andi x0, x0, 0'
+non_RVI_placehold = 'andi x0, x0, 1'
 
 INDENT = 2*' '
 
