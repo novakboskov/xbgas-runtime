@@ -26,6 +26,7 @@
 #error XBGAS-RUNTIME IS ONLY SUPPORTED UNDER RISCV
 #endif
 
+/* What is the real reason for this decision? */
 #if (__riscv_xlen != 64 )
 #error XBGAS-RUNTIME ONLY SUPPORTS 64 BIT COMPILATION
 #endif
